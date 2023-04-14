@@ -8,8 +8,9 @@
 
 body{
     font-size: 20px;
-    font-family: sans-serif;
+    font-family: 'Montserrat', sans-serif;
     max-width: 100vw;
+    font-size: 20px;
 }
 
 .container{
@@ -18,12 +19,40 @@ body{
     display: flex;
 }
 
+/* bottoni */
+
 .row{
     display: flex;
     width: 100%;
 }
 
-/* percentuali */
+button{
+    border-radius: 30px;
+    padding: 15px;
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+button.white{
+    background-color: white;
+    color: black;
+}
+
+button.black{
+    background-color: black;
+    color: white;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+/* grandezza colonne */
+
+/* percentuali col */
 
 .col{
     width: 100%;
@@ -43,7 +72,7 @@ body{
     padding: 6px;
 }
 
-/* frazioni */
+/* frazioni col */
 
 .col-1su3{
     width: calc(100% / 3);
@@ -53,11 +82,9 @@ body{
     width: calc(100% / 6);
 }
 
-/* elementi temporanei */
+/* fine grandezza colonne */
 
-.orange{
-    background-color: orange;
-}
+/* elementi temporanei */
 
 .lightpink{
     background-color: rgb(255,192,203);
@@ -68,9 +95,6 @@ body{
 }
 .pink{
     background-color: rgb(240,128,128);
-}
-.pink-jumbo{
-    background-color: rgb(238,130,238);
 }
 
 .scieleste{
@@ -97,15 +121,6 @@ body{
     border: dashed black 3px;
 }
 
-.container{
-    height: 500px;
-}
-
-.jumbotron>.container{
-    height: 360px;
-}
-
-
 /* fine elementi temporanei */
 
 /* testo */
@@ -125,24 +140,70 @@ body{
 /* nav style */
 
 nav{
-    background-color: rgb(173,216,230);
-    padding: 20px 0px;
+    background-color: rgb(37,94,233);
+    padding: 10px 0px;
 }
 
-nav>.container{
-    height: fit-content;
+nav .row{
+    align-items: center;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+nav li{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+
+nav button a{
+    font-size: 18px;
 }
 
 /* jumbotron style */
 
 .jumbotron{
-    background-color: rgb(0,0,139);
-    padding: 50px 0;
+    background-image: url(../img/jumbo.png);
+    background-size: cover;
+    background-position: center;
+    padding: 200px 0;
+    color: white;
+    font-weight: 500;
 }
 
 .jumbotron>.container{
     width: 880px;
 }
+
+.bottoni-jumbo{
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.jumbotron .col{
+    justify-content: center;
+}
+
+/* .jumbotron>.container>.row>.col>*{
+    margin: 50px 0;
+} */
+
+.jumbotron h1{
+    margin: 0 0 50px 0;
+    font-size: 50px;
+}
+
+.jumbotron p{
+    margin: 50px 0 30px 0;
+}
+
+
 
 /* main */
 
