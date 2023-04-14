@@ -19,10 +19,6 @@ body{
     display: flex;
 }
 
-.waves{
-    max-width: 100;
-}
-
 /* bottoni */
 
 .row{
@@ -32,19 +28,21 @@ body{
 
 button{
     border-radius: 30px;
-    padding: 15px;
-    font-size: inherit;
+    padding: 15px 20px;
+    font-size: 15px;
     font-weight: inherit;
 }
 
 button.white{
     background-color: white;
     color: black;
+    border: none;
 }
 
 button.black{
     background-color: black;
     color: white;
+    border: none;
 }
 
 a{
@@ -67,11 +65,11 @@ a{
     padding: 6px;
 }
 
-.col-40{
+.col-35{
     width: 40%;
 }
 
-.col-60{
+.col-65{
     width: 60%;
     padding: 6px;
 }
@@ -90,13 +88,6 @@ a{
 
 /* elementi temporanei */
 
-.lightpink{
-    background-color: rgb(255,192,203);
-}
-
-.lightblue{
-    background-color: rgb(30,144,255);
-}
 .pink{
     background-color: rgb(240,128,128);
 }
@@ -173,8 +164,8 @@ nav button a{
 .jumbotron{
     background-image: url(../img/jumbo.png);
     background-size: cover;
-    background-position: center;
-    padding: 200px 0;
+    background-position: top;
+    padding: 160px 0;
     color: white;
     font-weight: 500;
 }
@@ -190,6 +181,10 @@ nav button a{
     font-weight: 500;
 }
 
+.bottoni-jumbo>*{
+    margin: 0 15px;
+}
+
 .jumbotron .col{
     justify-content: center;
 }
@@ -199,7 +194,7 @@ nav button a{
 } */
 
 h2{
-    margin: 0 0 50px 0;
+    margin: 20px 0 50px 0;
     font-size: 50px;
 }
 
@@ -211,10 +206,6 @@ h2{
 
 /* main */
 
-main>.section{
-    padding: 40px 0;
-}
-
 main>.section:nth-of-type(even){
     background-color: rgb(211,211,211);
 }
@@ -222,6 +213,27 @@ main>.section:nth-of-type(even){
 .bottom-nav{
     padding: 15px 0 40px 0;
     border-bottom: 3px white solid;
+}
+
+.col-65>img{
+    width: 90%;
+    background-color: white;
+}
+
+.col>img{
+    width: 100%;
+}
+
+.waves{
+    width: 100%;
+    height: 80px;
+    margin: 0;
+    background-color: white;
+    color: rgb(211,211,211);
+}
+
+.waves.girato{
+    transform: rotate(180deg);
 }
 
 /* footer */
