@@ -14,9 +14,13 @@ body{
 }
 
 .container{
-    width: 1190px;
+    width: 1080px;
     margin:auto;
     display: flex;
+}
+
+.waves{
+    max-width: 100;
 }
 
 /* bottoni */
@@ -194,7 +198,7 @@ nav button a{
     margin: 50px 0;
 } */
 
-.jumbotron h1{
+h2{
     margin: 0 0 50px 0;
     font-size: 50px;
 }
@@ -211,12 +215,8 @@ main>.section{
     padding: 40px 0;
 }
 
-main>.section:nth-child(even){
+main>.section:nth-of-type(even){
     background-color: rgb(211,211,211);
-}
-
-main>.section:nth-last-child(2)>.container{
-    height: 800px;
 }
 
 .bottom-nav{
